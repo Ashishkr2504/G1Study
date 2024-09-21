@@ -15,20 +15,20 @@ int minSwap(int arr[],int n)
         e++;
     }
     m1=c0;
-    while(e<n)
+    while(e<2*n)
     {
-        if(arr[s]==0)
+        if(arr[s%n]==0)
         c0--;
-        if(arr[e]==0)
+        if(arr[e%n]==0)
         c0++;
-        m1=min(m1,c0);
         s++;
         e++;
+        m1=min(m1,c0);
     }
     return m1;
 }
 int main()
 {
-    int arr[]={1,0,0,0,1,0,1,1,1};
+    int arr[]={0,1,1,1,0,0,1,1,0};
     cout<<minSwap(arr,9);
 }
