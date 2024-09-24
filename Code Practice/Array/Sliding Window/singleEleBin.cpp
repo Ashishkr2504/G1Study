@@ -25,6 +25,6 @@ using namespace std;
 
 int main()
 {
-    vector<int> arr={0,1,1,2,2,5,5};
+    vector<int> arr={0,0,1,1,2,2,5};
     cout<<singleNonDuplicate(arr);
 }
