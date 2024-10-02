@@ -31,6 +31,7 @@ void printList(Node *h)
 }
 int main()
 {
-    Node *h=createSample();
+    Node *h;
+    h=createSample();
     printList(h);
 }
